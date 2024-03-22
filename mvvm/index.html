@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVVM</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body > * {
+        flex-basis: 50%;
+        text-align: center;
+      }
+      button {
+        cursor: pointer;
+        font-size: 3rem;
+      }
+      #display {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Input -->
+    <div>
+      <button type="button" data-action="muhoho" style="margin-bottom: 1rem">
+        Muhoho ^ ω
+      </button>
+      <button
+        type="button"
+        data-action="muhoho"
+        data-muhoho-eye="$"
+        data-muhoho-mouth="x"
+      >
+        Muhoho $ x
+      </button>
+    </div>
+    <!-- Output -->
+    <div id="display"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

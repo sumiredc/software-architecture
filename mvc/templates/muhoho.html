@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhoho</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        width: 100vw;
+        text-align: center;
+        font-size: 5rem;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+      }
+      form {
+        text-align: center;
+      }
+      footer {
+        margin-top: 3rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>{{.Face}}</h1>
+      <section>
+        <form action="" method="GET">
+          <h2>Query Params</h2>
+          <p><input type="text" placeholder="Eye" name="eye" /></p>
+          <p><input type="text" placeholder="Mouth" name="mouth" /></p>
+          <input type="submit" value="Change" />
+        </form>
+      </section>
+      <footer>
+        <a href="/">HOME</a>
+      </footer>
+    </main>
+  </body>
+</html>
